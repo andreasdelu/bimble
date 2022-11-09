@@ -1,0 +1,19 @@
+.buttonContainer {
+	padding: 0.5rem 0;
+	background-color: var(--clr-grey);
+	width: 100%;
+	border-radius: 999px;
+	cursor: pointer;
+}
+
+.buttonText {
+	margin: 0;
+	text-align: center;
+}
+
+.buttonCallToAction {
+	background-color: var(--clr-green);
+}
+.buttonCallToAction .buttonText {
+	color: black;
+}

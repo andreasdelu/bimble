@@ -1,0 +1,109 @@
+.active * {
+	color: var(--clr-green) !important;
+}
+
+#navBar {
+	height: 70px;
+	width: 100vw;
+	box-sizing: border-box;
+	padding: 0 var(--margin);
+	background-color: var(--clr-black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logoContainer {
+	margin-right: auto;
+	width: 25%;
+}
+
+.logo {
+	height: 25px;
+}
+
+.navMenuItems {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+}
+
+.menuItem {
+	width: 2.5rem;
+	height: 2.5rem;
+	display: grid;
+	place-items: center;
+}
+
+.menuItem:not(.active):hover {
+	background-color: var(--clr-grey);
+	border-radius: 50%;
+}
+
+.userContainer {
+	margin-left: auto;
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.user {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--clr-grey);
+	padding: 0rem 15px;
+	padding-right: 5px;
+	border-radius: 9999px;
+	cursor: pointer;
+	height: 40px;
+	transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 700px) {
+	.user {
+		padding: 0;
+		width: 40px;
+		height: 40px;
+	}
+	.username {
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+	.userContainer {
+		width: 50px;
+	}
+
+	.logo {
+		height: 20px;
+	}
+	.navMenuItems {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
+	}
+}
+
+.username {
+	margin: 0;
+	margin-right: 0.5rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.userIcon {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.userImage {
+	object-fit: cover;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}

@@ -1,0 +1,69 @@
+#userProfileWrap {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.profileContainer {
+	display: flex;
+	align-items: flex-end;
+	gap: 1rem;
+}
+
+.profileImage {
+	width: 130px;
+	height: 130px;
+	object-fit: cover;
+	border-radius: calc(var(--b-radius) / 2);
+}
+
+.profileName {
+	font-size: 1.3rem;
+	font-weight: 800;
+}
+
+.profileEmail {
+	font-size: 0.8rem;
+}
+
+#allUserPosts {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--margin) * 2);
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: calc(var(--margin) * 2);
+}
+
+.profileButtons {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+
+.profileButtons div {
+	width: 130px;
+}
+
+@media screen and (max-width: 500px) {
+	.profileContainer {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.profileInfo {
+		text-align: center;
+	}
+	.profileButtons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		margin: 0 auto;
+		margin-top: 1rem;
+		width: 200px;
+	}
+}

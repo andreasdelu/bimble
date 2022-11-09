@@ -1,0 +1,28 @@
+.dropdownContainer {
+	position: absolute;
+	bottom: 0%;
+	transform: translateY(100%);
+	width: fit-content;
+	font-size: 0.9rem !important;
+	background-color: var(--clr-dark);
+	text-align: left;
+	border-radius: 10px;
+	overflow: hidden;
+	display: block;
+}
+
+.dcLeft {
+	left: 0;
+}
+.dcRight {
+	right: 0;
+}
+
+.dropdownItem {
+	padding: 0.5rem 1rem;
+	white-space: nowrap;
+}
+
+.dropdownItem:hover {
+	background-color: rgba(255, 255, 255, 0.02);
+}
